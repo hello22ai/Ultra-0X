@@ -1,5 +1,13 @@
 import AnimatedStat from "@/components/AnimatedStat";
+import HeroPlayer from "@/components/HeroPlayer";
 import { Sparkles, Play, Star, Hd, Bolt } from "@/components/icons";
+
+// Self-hosted imagery for the "Continue Watching" cards (in /public/media — swap later).
+const posterBg = (file) => ({
+  backgroundImage: `linear-gradient(to top, rgba(8,8,10,.92), rgba(8,8,10,.1) 58%), url(/media/${file})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+});
 
 export default function Hero() {
   return (
@@ -52,42 +60,29 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="app-featured">
-                <div className="feat-badges">
-                  <span className="feat-badge live"><span className="pulse"></span>LIVE</span>
-                  <span className="feat-badge q">4K</span>
-                </div>
-                <span className="feat-score">2&nbsp;–&nbsp;1</span>
-                <div className="feat-play"><Play /></div>
-                <div className="feat-info">
-                  <div className="feat-title">Champions Final 2026</div>
-                  <div className="feat-meta">
-                    <span className="dot">●</span> Sports HD · 2nd Half · 8.4M watching
-                  </div>
-                </div>
-              </div>
+              <HeroPlayer />
 
               <div className="row-head">
                 <span className="rh-t">Continue Watching</span>
                 <span className="rh-l">See all</span>
               </div>
               <div className="poster-row">
-                <div className="poster">
+                <div className="poster" style={posterBg("crown.jpg")}>
                   <span className="poster-tag">Drama</span>
                   <span className="poster-title">Crown of Ash</span>
                   <span className="poster-prog"><i style={{ width: "72%" }} /></span>
                 </div>
-                <div className="poster">
+                <div className="poster" style={posterBg("midnight.jpg")}>
                   <span className="poster-tag">Action</span>
                   <span className="poster-title">Midnight Run</span>
                   <span className="poster-prog"><i style={{ width: "40%" }} /></span>
                 </div>
-                <div className="poster">
+                <div className="poster" style={posterBg("frontier.jpg")}>
                   <span className="poster-tag">Sci-Fi</span>
                   <span className="poster-title">Last Frontier</span>
                   <span className="poster-prog"><i style={{ width: "18%" }} /></span>
                 </div>
-                <div className="poster">
+                <div className="poster" style={posterBg("neon.jpg")}>
                   <span className="poster-tag">Thriller</span>
                   <span className="poster-title">Neon City</span>
                   <span className="poster-prog"><i style={{ width: "55%" }} /></span>

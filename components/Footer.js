@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="foot-brand">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-light.svg" alt="Ultra X Player" className="foot-logo" />
+          <img src="/media/logo-onlight.png" alt="Ultra X Player" className="foot-logo" />
           <p>
             Premium streaming, every screen. Ultra X Player provides streaming
             software only — users are responsible for accessing content lawfully.
