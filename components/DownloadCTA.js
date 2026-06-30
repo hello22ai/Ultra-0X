@@ -1,9 +1,9 @@
-import { Play, Apple, Flame } from "@/components/icons";
+import { GooglePlay, Apple, Amazon } from "@/components/icons";
 
 const STORES = [
-  { Icon: Play, small: "GET IT ON", strong: "Google Play" },
+  { Icon: GooglePlay, small: "GET IT ON", strong: "Google Play" },
   { Icon: Apple, small: "Download on the", strong: "App Store" },
-  { Icon: Flame, small: "Available on", strong: "Fire TV" },
+  { Icon: Amazon, small: "Available on", strong: "Fire TV" },
 ];
 
 export default function DownloadCTA() {

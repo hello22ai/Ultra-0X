@@ -1,8 +1,18 @@
-import { Signal } from "@/components/icons";
+import { Trophy, Film, Newspaper, Star, MusicNote, Globe, Tv } from "@/components/icons";
 
 const GENRES = [
-  "Sports", "Movies", "News", "Kids", "Music", "Documentary",
-  "Live TV", "Series", "Cricket", "Premier League", "Cinema", "Regional",
+  { name: "Sports", Icon: Trophy },
+  { name: "Movies", Icon: Film },
+  { name: "News", Icon: Newspaper },
+  { name: "Kids", Icon: Star },
+  { name: "Music", Icon: MusicNote },
+  { name: "Documentary", Icon: Globe },
+  { name: "Live TV", Icon: Tv },
+  { name: "Series", Icon: Film },
+  { name: "Cricket", Icon: Trophy },
+  { name: "Premier League", Icon: Trophy },
+  { name: "Cinema", Icon: Film },
+  { name: "Regional", Icon: Globe },
 ];
 
 export default function Marquee() {
@@ -10,10 +20,10 @@ export default function Marquee() {
   return (
     <div className="marquee" aria-hidden="true">
       <div className="marquee-track">
-        {loop.map((g, i) => (
+        {loop.map(({ name, Icon }, i) => (
           <span className="marquee-pill" key={i}>
-            <Signal style={{ width: 16, height: 16, color: "var(--gold-3)" }} />
-            {g}
+            <Icon style={{ width: 16, height: 16, color: "var(--gold-3)" }} />
+            {name}
           </span>
         ))}
       </div>

@@ -28,7 +28,7 @@ export default function Header() {
       <div className="container header-inner">
         <a href="#home" className="brand" aria-label="Ultra X Player home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.svg" alt="Ultra X Player" className="brand-logo" />
+          <img src="/logo-light.svg" alt="Ultra X Player" className="brand-logo" />
         </a>
 
         <nav className="nav">

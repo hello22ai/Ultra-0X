@@ -1,10 +1,10 @@
-import { Phone, Apple, Tv, Flame, Monitor, Box } from "@/components/icons";
+import { Android, Apple, Tv, Amazon, Monitor, Box } from "@/components/icons";
 
 const DEVICES = [
-  { Icon: Phone, name: "Android" },
+  { Icon: Android, name: "Android" },
   { Icon: Apple, name: "iOS / iPhone" },
   { Icon: Tv, name: "Smart TV" },
-  { Icon: Flame, name: "Firestick" },
+  { Icon: Amazon, name: "Firestick" },
   { Icon: Monitor, name: "Web / PC" },
   { Icon: Box, name: "Android Box" },
 ];
