@@ -3,20 +3,20 @@ import { useState } from "react";
 
 const ITEMS = [
   {
+    q: "Do you have Indian channels and regional languages?",
+    a: "Yes — thousands of Indian channels including Hindi, Punjabi, Tamil, Telugu, Malayalam, Bengali and more, plus live cricket, Bollywood, news and devotional content.",
+  },
+  {
     q: "Which devices does Ultra X Player work on?",
     a: "Android phones, iPhones, Smart TVs, Amazon Firestick, Android boxes and any modern web browser. One account works across all of them.",
   },
   {
-    q: "Do I need a separate device to use it?",
-    a: "No. Ultra X Player is a software app — just install it on a device you already own and sign in.",
-  },
-  {
-    q: "Can I cancel anytime?",
-    a: "Yes. Monthly and annual plans can be cancelled anytime from your account with no hidden fees.",
+    q: "What's the difference between the App and Box plans?",
+    a: "The App plan installs on a device you already own. The Box plans include an Ultra X Box ready to plug into your TV — pick the plan that matches your devices and number of logins.",
   },
   {
     q: "Is 4K streaming included in every plan?",
-    a: "Absolutely. Every plan includes full 4K Ultra HD and all features — the only difference is profiles and support priority.",
+    a: "Absolutely. Every plan includes full 4K Ultra HD and all channels — plans differ only by duration, device logins and whether a Box is included.",
   },
 ];
 

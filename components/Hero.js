@@ -67,24 +67,24 @@ export default function Hero() {
                 <span className="rh-l">See all</span>
               </div>
               <div className="poster-row">
-                <div className="poster" style={posterBg("crown.jpg")}>
-                  <span className="poster-tag">Drama</span>
-                  <span className="poster-title">Crown of Ash</span>
+                <div className="poster" style={posterBg("mirzapur.svg")}>
+                  <span className="poster-tag">Web Series</span>
+                  <span className="poster-title">Mirzapur</span>
                   <span className="poster-prog"><i style={{ width: "72%" }} /></span>
                 </div>
-                <div className="poster" style={posterBg("midnight.jpg")}>
-                  <span className="poster-tag">Action</span>
-                  <span className="poster-title">Midnight Run</span>
+                <div className="poster" style={posterBg("jawan.svg")}>
+                  <span className="poster-tag">Bollywood</span>
+                  <span className="poster-title">Jawan</span>
                   <span className="poster-prog"><i style={{ width: "40%" }} /></span>
                 </div>
-                <div className="poster" style={posterBg("frontier.jpg")}>
-                  <span className="poster-tag">Sci-Fi</span>
-                  <span className="poster-title">Last Frontier</span>
+                <div className="poster" style={posterBg("ipl-final.svg")}>
+                  <span className="poster-tag">Cricket</span>
+                  <span className="poster-title">IPL Final</span>
                   <span className="poster-prog"><i style={{ width: "18%" }} /></span>
                 </div>
-                <div className="poster" style={posterBg("neon.jpg")}>
-                  <span className="poster-tag">Thriller</span>
-                  <span className="poster-title">Neon City</span>
+                <div className="poster" style={posterBg("pushpa.svg")}>
+                  <span className="poster-tag">South</span>
+                  <span className="poster-title">Pushpa 2</span>
                   <span className="poster-prog"><i style={{ width: "55%" }} /></span>
                 </div>
               </div>

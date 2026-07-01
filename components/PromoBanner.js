@@ -8,8 +8,8 @@ export default function PromoBanner() {
     <div className="promo-banner">
       <div className="container promo-inner">
         <p>
-          <span className="flash">⚡ FLASH SALE</span> Get{" "}
-          <strong>3 Months FREE</strong> on the Ultra X Player Annual Plan —
+          <span className="flash">⚡ FLASH SALE</span> Get a{" "}
+          <strong>FREE App + Box</strong> on the Ultra X 2-Year Plan —
           limited time only.
         </p>
         <a href="#pricing" className="promo-cta">Claim Offer</a>

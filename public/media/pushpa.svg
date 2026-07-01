@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="pkBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123a1a"/>
+      <stop offset="0.5" stop-color="#0b1d0e"/>
+      <stop offset="1" stop-color="#040703"/>
+    </linearGradient>
+    <radialGradient id="pkGlow" cx="0.5" cy="0.3" r="0.72">
+      <stop offset="0" stop-color="#ff8a2a" stop-opacity="0.6"/>
+      <stop offset="0.5" stop-color="#a83c0a" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pkFire" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="0.5" stop-color="#ff7a1a"/>
+      <stop offset="1" stop-color="#a83400"/>
+    </linearGradient>
+    <radialGradient id="pkVig" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.85"/>
+    </radialGradient>
+    <filter id="pkGrain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer><feComposite operator="over" in2="SourceGraphic"/></filter>
+    <filter id="pkBlur"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="600" height="900" fill="url(#pkBg)"/>
+  <rect width="600" height="900" fill="url(#pkGlow)"/>
+  <!-- misty haze -->
+  <g filter="url(#pkBlur)" opacity="0.5">
+    <ellipse cx="300" cy="300" rx="200" ry="80" fill="#e07a1a" opacity="0.28"/>
+    <ellipse cx="300" cy="520" rx="260" ry="70" fill="#0a2410" opacity="0.6"/>
+  </g>
+  <!-- sandalwood forest silhouette -->
+  <g fill="#05130a">
+    <path d="M0 500 q30 -130 60 0 q30 -150 60 0 q30 -120 60 0 q30 -160 60 0 q30 -130 60 0 q30 -150 60 0 q30 -120 60 0 q30 -150 60 0 q30 -120 60 0 q30 -140 60 0 L600 900 L0 900 Z"/>
+  </g>
+  <!-- rugged bearded silhouette -->
+  <g fill="#050301">
+    <path d="M188 520 q112 -150 224 0 Z"/>
+    <ellipse cx="300" cy="300" rx="86" ry="104"/>
+  </g>
+  <path d="M230 300 q70 150 140 0 q-16 100 -70 112 q-54 -12 -70 -112 Z" fill="#0a0703"/>
+  <path d="M256 248 q44 -32 88 0" fill="none" stroke="url(#pkFire)" stroke-width="6"/>
+  <path d="M270 232 q30 -18 60 0" fill="none" stroke="url(#pkFire)" stroke-width="4" opacity="0.7"/>
+  <text x="300" y="614" text-anchor="middle" font-family="Georgia, serif" font-size="98" font-weight="700" letter-spacing="4" fill="url(#pkFire)">PUSHPA</text>
+  <text x="300" y="682" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="44" letter-spacing="6" fill="#ffd24a">2</text>
+  <text x="300" y="724" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="9" fill="#f0a35a">SOUTH · ACTION</text>
+  <rect width="600" height="900" fill="url(#pkVig)"/>
+  <rect width="600" height="900" filter="url(#pkGrain)" opacity="0.5"/>
+</svg>

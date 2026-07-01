@@ -1,18 +1,18 @@
 import { Trophy, Film, Newspaper, Star, MusicNote, Globe, Tv } from "@/components/icons";
 
 const GENRES = [
-  { name: "Sports", Icon: Trophy },
-  { name: "Movies", Icon: Film },
+  { name: "Cricket", Icon: Trophy },
+  { name: "IPL", Icon: Trophy },
+  { name: "Bollywood", Icon: Film },
   { name: "News", Icon: Newspaper },
   { name: "Kids", Icon: Star },
-  { name: "Music", Icon: MusicNote },
-  { name: "Documentary", Icon: Globe },
+  { name: "Devotional", Icon: MusicNote },
   { name: "Live TV", Icon: Tv },
-  { name: "Series", Icon: Film },
-  { name: "Cricket", Icon: Trophy },
-  { name: "Premier League", Icon: Trophy },
-  { name: "Cinema", Icon: Film },
-  { name: "Regional", Icon: Globe },
+  { name: "Web Series", Icon: Film },
+  { name: "Kabaddi", Icon: Trophy },
+  { name: "Regional Cinema", Icon: Film },
+  { name: "Music", Icon: MusicNote },
+  { name: "Tamil & Telugu", Icon: Globe },
 ];
 
 export default function Marquee() {

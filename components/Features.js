@@ -13,9 +13,9 @@ export default function Features() {
             <div className="icon-badge"><Signal /></div>
             <h3>20,000+ Live Channels</h3>
             <p>
-              Sports, news, kids, movies and regional content from around the
-              world — all in crystal-clear quality, streamed live with an
-              adaptive engine that never drops a frame.
+              Cricket, Bollywood, news, kids and regional content in every
+              Indian language — all in crystal-clear quality, streamed live with
+              an adaptive engine that never drops a frame.
             </p>
             <div className="feature-big-art" aria-hidden="true">
               <div className="top10">
@@ -25,17 +25,17 @@ export default function Features() {
                 </div>
                 <div className="t10-item">
                   <span className="t10-rank">1</span>
-                  <span className="t10-mid"><span className="t10-title">Champions Final 2026</span><span className="t10-bar"><i style={{ width: "94%" }} /></span></span>
+                  <span className="t10-mid"><span className="t10-title">India vs Australia · Live</span><span className="t10-bar"><i style={{ width: "94%" }} /></span></span>
                   <span className="t10-views">8.4M</span>
                 </div>
                 <div className="t10-item">
                   <span className="t10-rank">2</span>
-                  <span className="t10-mid"><span className="t10-title">Crown of Ash · S2</span><span className="t10-bar"><i style={{ width: "76%" }} /></span></span>
+                  <span className="t10-mid"><span className="t10-title">Mirzapur · New Season</span><span className="t10-bar"><i style={{ width: "76%" }} /></span></span>
                   <span className="t10-views">3.1M</span>
                 </div>
                 <div className="t10-item">
                   <span className="t10-rank">3</span>
-                  <span className="t10-mid"><span className="t10-title">World Tonight</span><span className="t10-bar"><i style={{ width: "58%" }} /></span></span>
+                  <span className="t10-mid"><span className="t10-title">Aaj Tak · Prime Time</span><span className="t10-bar"><i style={{ width: "58%" }} /></span></span>
                   <span className="t10-views">1.9M</span>
                 </div>
               </div>

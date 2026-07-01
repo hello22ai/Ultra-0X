@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="mzBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241804"/>
+      <stop offset="0.45" stop-color="#120c04"/>
+      <stop offset="1" stop-color="#030201"/>
+    </linearGradient>
+    <radialGradient id="mzGlow" cx="0.5" cy="0.3" r="0.72">
+      <stop offset="0" stop-color="#f5b820" stop-opacity="0.7"/>
+      <stop offset="0.45" stop-color="#a9711a" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mzGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0b0"/>
+      <stop offset="0.45" stop-color="#f0b429"/>
+      <stop offset="1" stop-color="#8a5c10"/>
+    </linearGradient>
+    <radialGradient id="mzVig" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.85"/>
+    </radialGradient>
+    <filter id="mzGrain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer><feComposite operator="over" in2="SourceGraphic"/></filter>
+    <filter id="mzBlur"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+  <rect width="600" height="900" fill="url(#mzBg)"/>
+  <rect width="600" height="900" fill="url(#mzGlow)"/>
+  <!-- smoke haze -->
+  <g filter="url(#mzBlur)" opacity="0.5">
+    <ellipse cx="300" cy="250" rx="180" ry="70" fill="#c98a1c" opacity="0.35"/>
+    <ellipse cx="200" cy="360" rx="120" ry="50" fill="#7a5310" opacity="0.3"/>
+    <ellipse cx="420" cy="330" rx="120" ry="50" fill="#7a5310" opacity="0.3"/>
+  </g>
+  <!-- throne / crime-boss silhouette -->
+  <g fill="#050301">
+    <rect x="238" y="300" width="124" height="240" rx="8"/>
+    <rect x="224" y="288" width="152" height="30" rx="10"/>
+    <rect x="224" y="470" width="152" height="70" rx="6"/>
+    <ellipse cx="300" cy="250" rx="40" ry="46"/>
+    <path d="M256 300 q44 -40 88 0 l0 60 q-44 -22 -88 0 Z"/>
+  </g>
+  <!-- crossed rifles emblem -->
+  <g stroke="url(#mzGold)" stroke-width="9" stroke-linecap="round" opacity="0.95">
+    <path d="M225 200 L375 300"/>
+    <path d="M375 200 L225 300"/>
+  </g>
+  <circle cx="300" cy="250" r="26" fill="none" stroke="url(#mzGold)" stroke-width="5"/>
+  <circle cx="300" cy="250" r="7" fill="url(#mzGold)"/>
+  <text x="300" y="632" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="700" letter-spacing="5" fill="url(#mzGold)">MIRZAPUR</text>
+  <text x="300" y="676" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" letter-spacing="11" fill="#c9a24a">CRIME · WEB SERIES</text>
+  <rect width="600" height="900" fill="url(#mzVig)"/>
+  <rect width="600" height="900" filter="url(#mzGrain)" opacity="0.5"/>
+</svg>

@@ -4,19 +4,19 @@ import { Star, Check } from "@/components/icons";
 
 const REVIEWS = [
   {
-    text: "Switched from my old box and never looked back. Zero buffering even on 4K — the support team replied in under two minutes.",
-    name: "Rayyan S.",
-    meta: "Manchester, UK · Firestick",
+    text: "Switched from my old cable and never looked back. Zero buffering even during the IPL final in 4K — support replied on WhatsApp in under two minutes.",
+    name: "Rahul S.",
+    meta: "Mumbai · Firestick",
   },
   {
-    text: "Setup took five minutes and the EPG guide is gorgeous. Whole family has their own profile now and the kids' PIN lock just works.",
-    name: "Tanu N.",
-    meta: "Toronto, CA · Smart TV",
+    text: "Setup took five minutes and the TV guide is gorgeous. Every regional channel my parents watch is here, and the kids' PIN lock just works.",
+    name: "Priya N.",
+    meta: "Bengaluru · Smart TV",
   },
   {
-    text: "Catch-up saved me when I missed the final. Best streaming app I've used in years — and I've tried most of them.",
-    name: "Shonin N.",
-    meta: "Sydney, AU · Android",
+    text: "Catch-up saved me when I missed the India match. All my Telugu and Hindi content in one app — best I've used in years.",
+    name: "Arjun R.",
+    meta: "Hyderabad · Android",
   },
 ];
 

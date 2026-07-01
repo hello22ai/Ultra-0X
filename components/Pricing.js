@@ -2,22 +2,28 @@ import { Check } from "@/components/icons";
 
 const PLANS = [
   {
-    name: "Monthly", sub: "Flexible, no commitment",
-    cur: "$", price: "12", per: "/mo",
-    features: ["All channels & VOD", "4K Ultra HD", "2 profiles", "Email support"],
-    cta: "Choose Monthly", featured: false,
+    name: "App Only", sub: "Stream on your own device",
+    cur: "$", price: "180", per: "/yr",
+    features: ["App for 1 year", "1 device login", "All channels & VOD", "4K Ultra HD"],
+    cta: "Get App Plan", featured: false,
   },
   {
-    name: "Annual", sub: "Best value — save 38%",
-    cur: "$", price: "89", per: "/yr",
-    features: ["Everything in Monthly", "5 profiles", "7-day catch-up", "Priority 24×7 support", "+3 months free"],
-    cta: "Get Annual", featured: true,
+    name: "Box + App", sub: "The complete setup",
+    cur: "$", price: "220", per: "/yr",
+    features: ["1 Ultra X Box included", "App for 1 year", "2 device logins", "All channels & VOD"],
+    cta: "Get Box + App", featured: false,
   },
   {
-    name: "Lifetime", sub: "Pay once, watch forever",
-    cur: "$", price: "249", per: "once",
-    features: ["Everything, forever", "Unlimited profiles", "Early access features", "VIP support line"],
-    cta: "Go Lifetime", featured: false,
+    name: "2-Year Combo", sub: "Best value — save more",
+    cur: "$", price: "400", per: "/2yr",
+    features: ["2-year subscription", "FREE App included", "1 Ultra X Box included", "2 device logins"],
+    cta: "Get 2-Year Combo", featured: true,
+  },
+  {
+    name: "Family Multi", sub: "For the whole household",
+    cur: "$", price: "500", per: "/2yr",
+    features: ["2 Ultra X Boxes + 1 App", "Same-house multi device", "3 device logins", "2-year subscription"],
+    cta: "Get Family Plan", featured: false,
   },
 ];
 
@@ -30,7 +36,7 @@ export default function Pricing() {
           <h2>Simple, <span className="text-gold">Honest</span> Pricing</h2>
           <p className="section-sub">Cancel anytime. All plans include every feature.</p>
         </div>
-        <div className="grid grid-3 plans">
+        <div className="grid grid-4 plans">
           {PLANS.map((p) => (
             <article className={`plan${p.featured ? " featured" : ""}`} key={p.name}>
               {p.featured && <div className="badge">★ Most Popular</div>}

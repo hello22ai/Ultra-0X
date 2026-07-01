@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="jwBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a0c0c"/>
+      <stop offset="0.5" stop-color="#1c0505"/>
+      <stop offset="1" stop-color="#050101"/>
+    </linearGradient>
+    <radialGradient id="jwGlow" cx="0.5" cy="0.28" r="0.78">
+      <stop offset="0" stop-color="#ff4d4d" stop-opacity="0.65"/>
+      <stop offset="0.5" stop-color="#7a0f0f" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="jwSteel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#d7d7db"/>
+      <stop offset="1" stop-color="#7d7d84"/>
+    </linearGradient>
+    <radialGradient id="jwVig" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.85"/>
+    </radialGradient>
+    <filter id="jwGrain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer><feComposite operator="over" in2="SourceGraphic"/></filter>
+    <filter id="jwBlur"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="600" height="900" fill="url(#jwBg)"/>
+  <rect width="600" height="900" fill="url(#jwGlow)"/>
+  <!-- action light streaks -->
+  <g stroke="#ff5a5a" stroke-width="2.5" opacity="0.28">
+    <path d="M300 340 L60 110"/><path d="M300 340 L540 110"/>
+    <path d="M300 340 L10 340"/><path d="M300 340 L590 340"/>
+    <path d="M300 340 L110 30"/><path d="M300 340 L490 30"/>
+  </g>
+  <!-- ember particles -->
+  <g fill="#ffb03a" opacity="0.8">
+    <circle cx="150" cy="220" r="3"/><circle cx="470" cy="180" r="2.5"/>
+    <circle cx="210" cy="140" r="2"/><circle cx="400" cy="260" r="3"/>
+    <circle cx="120" cy="330" r="2.5"/><circle cx="500" cy="300" r="2"/>
+  </g>
+  <!-- hero silhouette: shoulders + head + bandana -->
+  <g fill="#050101">
+    <path d="M170 540 q130 -150 260 0 Z"/>
+    <ellipse cx="300" cy="330" rx="86" ry="104"/>
+  </g>
+  <path d="M214 318 q86 -54 172 0 l0 22 q-86 -32 -172 0 Z" fill="#ff3b3b"/>
+  <path d="M386 328 l40 -14 -10 30 Z" fill="#c81e1e"/>
+  <text x="300" y="646" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="128" letter-spacing="7" fill="url(#jwSteel)">JAWAN</text>
+  <text x="300" y="694" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" letter-spacing="11" fill="#ff6a6a">BOLLYWOOD · ACTION</text>
+  <rect width="600" height="900" fill="url(#jwVig)"/>
+  <rect width="600" height="900" filter="url(#jwGrain)" opacity="0.5"/>
+</svg>

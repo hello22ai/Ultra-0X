@@ -12,7 +12,7 @@ export default function DownloadCTA() {
       <div className="container">
         <div className="cta-box">
           <h2>Get <span className="text-gold">Ultra X Player</span> Today</h2>
-          <p>Download now and start your free trial. No box, no cables — just press play.</p>
+          <p>Download the app or order your Ultra X Box — thousands of Indian channels, one tap away.</p>
           <div className="store-buttons">
             {STORES.map(({ Icon, small, strong }) => (
               <a href="#" className="store-btn" key={strong}>
