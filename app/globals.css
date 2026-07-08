@@ -457,6 +457,8 @@ h1,h2,h3,h4{font-family:var(--font-oswald),sans-serif;font-weight:600;line-heigh
 .footer-bottom{border-top:1px solid var(--border-soft);padding:22px 0}
 .footer-bottom .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .footer-bottom p{color:var(--muted-2);font-size:.85rem}
+.foot-links{display:inline-flex;align-items:center;gap:14px}
+.foot-links .dot{color:var(--gold-3)}
 .foot-links a:hover{color:var(--gold-4)}
 
 /* ===== Scroll progress bar ===== */
