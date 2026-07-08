@@ -90,8 +90,7 @@ export default function Footer() {
             the Indian community.
           </p>
           <p className="foot-links">
-            <a href="/policy">Privacy</a> · <a href="#">Terms</a> ·{" "}
-            <a href="#">Disclaimer</a> · <a href="#">Sitemap</a>
+            <a href="/policy">Privacy Policy</a>
           </p>
         </div>
       </div>
