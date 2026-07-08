@@ -21,9 +21,10 @@ export default function Marquee() {
     <div className="marquee" aria-hidden="true">
       <div className="marquee-track">
         {loop.map(({ name, Icon }, i) => (
-          <span className="marquee-pill" key={i}>
-            <Icon style={{ width: 16, height: 16, color: "var(--gold-3)" }} />
+          <span className="marquee-item" key={i}>
+            <Icon />
             {name}
+            <span className="marquee-sep">✦</span>
           </span>
         ))}
       </div>

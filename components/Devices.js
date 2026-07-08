@@ -13,10 +13,13 @@ export default function Devices() {
   return (
     <section className="section devices" id="devices">
       <div className="container">
-        <div className="section-head">
+        <div className="section-head" data-ghost="Ghar">
           <span className="kicker">Works Everywhere</span>
-          <h2>One Subscription, <span className="text-gold">Every Screen</span></h2>
-          <p className="section-sub">Download Ultra X Player on the devices you already own.</p>
+          <h2>Ek Subscription, <span className="text-gold">Ghar Ki Har Screen</span></h2>
+          <p className="section-sub">
+            Jo devices ghar mein pehle se hain, unhi par chalega — naya kuch
+            khareedne ki zaroorat nahi.
+          </p>
         </div>
         <div className="grid grid-6 device-grid">
           {DEVICES.map(({ Icon, name }) => (

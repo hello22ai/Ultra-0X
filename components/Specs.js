@@ -11,13 +11,33 @@ const SPECS = [
   { Icon: Shield, big: "End-to-End", sub: "Secure & private" },
 ];
 
+const BADGES = [
+  "4K HDR10+",
+  "Dolby Vision",
+  "Dolby Audio",
+  "8K Ready",
+  "Bluetooth 5.0",
+  "Dual-Band Wi-Fi",
+  "Chromecast",
+  "EPG Guide",
+];
+
 export default function Specs() {
   return (
-    <section className="section specs">
+    <section className="section specs" id="specs">
       <div className="container">
-        <div className="section-head">
+        <div className="section-head" data-ghost="Dum">
           <span className="kicker">Under the Hood</span>
           <h2>Powered by <span className="text-gold">AI &amp; Next-Gen Tech</span></h2>
+          <p className="section-sub">
+            Tech humara kaam hai, aapka nahi — aap bas remote uthaiye, baaki
+            hum sambhal lenge.
+          </p>
+        </div>
+        <div className="tech-badges">
+          {BADGES.map((b) => (
+            <span className="tech-pill" key={b}>{b}</span>
+          ))}
         </div>
         <div className="grid grid-4 spec-grid">
           {SPECS.map(({ Icon, big, sub }) => (

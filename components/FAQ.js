@@ -1,7 +1,12 @@
 "use client";
 import { useState } from "react";
+import { SUPPORT_EMAIL } from "@/components/site-config";
 
 const ITEMS = [
+  {
+    q: "Setup kitna mushkil hai?",
+    a: "Bilkul nahi — bas plug lagao, Wi-Fi connect karo, ho gaya. Aur agar kahin atak jayein, live chat pe ek real insaan aapke saath step-by-step setup karwa dega.",
+  },
   {
     q: "Do you have Indian channels and regional languages?",
     a: "Yes — thousands of Indian channels including Hindi, Punjabi, Tamil, Telugu, Malayalam, Bengali and more, plus live cricket, Bollywood, news and devotional content.",
@@ -25,9 +30,13 @@ export default function FAQ() {
   return (
     <section className="section faq" id="faq">
       <div className="container narrow">
-        <div className="section-head">
+        <div className="section-head" data-ghost="Madad">
           <span className="kicker">Support</span>
-          <h2>Frequently Asked <span className="text-gold">Questions</span></h2>
+          <h2>Aapke <span className="text-gold">Sawaal</span>, Humare Jawab</h2>
+          <p className="section-sub">
+            Jo cheezein log humse sabse zyada poochhte hain — seedhe shabdon
+            mein, bina gol-mol ke.
+          </p>
         </div>
         <div className="accordion">
           {ITEMS.map((item, i) => {
@@ -52,6 +61,11 @@ export default function FAQ() {
             );
           })}
         </div>
+        <p className="faq-help">
+          <span className="online-dot" /> Jawab nahi mila? Real insaan se
+          poochhiye — <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>{" "}
+          pe likhiye, aam taur par 24 ghante ke andar jawab milta hai.
+        </p>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { Check } from "@/components/icons";
+import { SUPPORT_EMAIL } from "@/components/site-config";
 
 const PLANS = [
   {
@@ -31,10 +32,13 @@ export default function Pricing() {
   return (
     <section className="section pricing" id="pricing">
       <div className="container">
-        <div className="section-head">
+        <div className="section-head" data-ghost="Bharosa">
           <span className="kicker">Plans</span>
-          <h2>Simple, <span className="text-gold">Honest</span> Pricing</h2>
-          <p className="section-sub">Cancel anytime. All plans include every feature.</p>
+          <h2>Seedhi Baat, <span className="text-gold">Honest</span> Pricing</h2>
+          <p className="section-sub">
+            Koi hidden charges nahi, cancel kabhi bhi. Har plan mein saare
+            features — aap bas apne ghar ke hisaab se size chuniye.
+          </p>
         </div>
         <div className="grid grid-4 plans">
           {PLANS.map((p) => (
@@ -60,6 +64,12 @@ export default function Pricing() {
             </article>
           ))}
         </div>
+        <p className="human-help">
+          <span className="online-dot" /> Plan choose karne mein confusion?{" "}
+          <a href={`mailto:${SUPPORT_EMAIL}`}>Humein likhiye</a> — ek real
+          insaan aapke ghar ke hisaab se sahi plan chun dega. Koi pushy sales
+          nahi, sirf seedhi salaah.
+        </p>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import AnimatedStat from "@/components/AnimatedStat";
 import HeroPlayer from "@/components/HeroPlayer";
-import { Sparkles, Play, Star, Hd, Bolt } from "@/components/icons";
+import { Sparkles, Play, Star, Hd, Bolt, ArrowRight } from "@/components/icons";
 
 // Self-hosted imagery for the "Continue Watching" cards (in /public/media — swap later).
 const posterBg = (file) => ({
@@ -15,31 +15,35 @@ export default function Hero() {
       <div className="hero-grid-bg" aria-hidden="true"></div>
       <div className="container hero-inner">
         <div className="hero-copy">
-          <span className="eyebrow"><Sparkles /> #1 Premium Streaming Player</span>
+          <span className="eyebrow"><Sparkles /> Namaste 👋 India ka apna streaming player</span>
           <h1>
-            Stream Everything in <span className="text-gold">Ultra 4K</span> —
-            One Player, Every Device.
+            Ghar Jaisa <span className="text-gold">Entertainment</span>, Chahe
+            Aap Duniya Mein Kahin Bhi Ho.
           </h1>
           <p className="lead">
-            Ultra X Player brings live TV, movies and series together in a
-            blazing-fast, buffer-free experience. Switch languages, manage
-            profiles and pick up right where you left off.
+            Cricket ka match, Ma ke serials, bachchon ke cartoons — aapke poore
+            parivaar ka entertainment, ek app mein. Bas plug lagao, Wi-Fi
+            connect karo — ho gaya.
           </p>
           <div className="hero-cta">
             <a href="#download" className="btn btn-gold btn-lg">
-              <Play /> Download Today
+              <Play /> Download Karein <ArrowRight />
             </a>
             <a href="#features" className="btn btn-outline btn-lg">Explore Features</a>
           </div>
+          <p className="cta-note">
+            5 minute ka setup · Koi technical jhanjhat nahi · Atak jayein toh
+            real insaan madad karega
+          </p>
           <div className="hero-rating">
             <span className="stars"><Star /><Star /><Star /><Star /><Star /></span>
-            <span>Rated <strong>4.9/5</strong> by 50,000+ viewers</span>
+            <span>Rated <strong>4.9/5</strong> — 10,000+ happy families ka bharosa</span>
           </div>
           <div className="hero-stats">
             <AnimatedStat value={20} suffix="K+" label="Live Channels" />
             <AnimatedStat value={80} suffix="K+" label="Movies & Series" />
             <AnimatedStat value={4} suffix="K" label="Ultra HD" />
-            <AnimatedStat value={24} suffix="/7" label="Support" />
+            <AnimatedStat value={24} suffix="/7" label="Real-Human Support" />
           </div>
         </div>
 

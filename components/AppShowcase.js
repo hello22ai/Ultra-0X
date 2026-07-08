@@ -55,11 +55,11 @@ export default function AppShowcase() {
         </div>
         <div className="split-copy">
           <span className="kicker">The Player</span>
-          <h2>Ultra X Player — <span className="text-gold">Best Streaming App of 2026</span></h2>
+          <h2>Ek App, <span className="text-gold">Poora Ghar</span> Khush</h2>
           <p>
-            Stream, relax and enjoy with your whole family. A clean, modern
-            interface with voice-activated search puts everything you love a tap
-            away.
+            Poore parivaar ke saath baithiye, aur bas dekhna shuru kijiye. Saaf,
+            simple interface — Dadi se lekar bachchon tak, sabko ek tap mein
+            apna favourite mil jaata hai.
           </p>
           <ul className="check-list">
             {POINTS.map((p) => (

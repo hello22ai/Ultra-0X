@@ -15,6 +15,8 @@ import DownloadCTA from "@/components/DownloadCTA";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import ScrollProgress from "@/components/ScrollProgress";
+import QuickFeatures from "@/components/QuickFeatures";
+import FounderNote from "@/components/FounderNote";
 
 export default function Home() {
   return (
@@ -24,6 +26,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <QuickFeatures />
         <Marquee />
         <Features />
         <AppShowcase />
@@ -32,6 +35,7 @@ export default function Home() {
         <Languages />
         <Specs />
         <Pricing />
+        <FounderNote />
         <Testimonials />
         <FAQ />
         <DownloadCTA />

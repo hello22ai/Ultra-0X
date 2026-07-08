@@ -130,6 +130,14 @@ export const Newspaper = (p) => (
 export const MusicNote = (p) => (
   <svg {...base} {...p}><path d="M9 17.5V6l10-2v9.5" /><circle cx="6" cy="17.5" r="2.8" /><circle cx="16" cy="15.5" r="2.8" /></svg>
 );
+export const ChevronDown = (p) => (
+  <svg {...base} {...p}><path d="m6 9 6 6 6-6" /></svg>
+);
+export const Heart = (p) => (
+  <svg viewBox="0 0 24 24" width={24} height={24} fill="#e0433f" {...p}>
+    <path d="M12 21s-7.5-4.7-9.5-9A5.4 5.4 0 0 1 12 6.3 5.4 5.4 0 0 1 21.5 12c-2 4.3-9.5 9-9.5 9Z" />
+  </svg>
+);
 // Real Android robot
 export const Android = (p) => (
   <svg viewBox="0 0 24 24" width={24} height={24} fill="currentColor" {...p}>
