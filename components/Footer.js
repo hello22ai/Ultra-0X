@@ -77,7 +77,7 @@ export default function Footer() {
 
         <div className="foot-col newsletter">
           <h4>Newsletter</h4>
-          <p>Offers &amp; new content, seedha aapke inbox mein.</p>
+          <p>Offers &amp; new content, straight to your inbox.</p>
           <NewsletterForm />
         </div>
       </div>

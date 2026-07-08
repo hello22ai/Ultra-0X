@@ -19,9 +19,6 @@ export const metadata = {
   title: "Ultra X Player — Premium IPTV Streaming Player",
   description:
     "Ultra X Player — stream live TV, movies & series in 4K with EPG, catch-up, multi-profile and parental controls. Works on Android, iOS, Smart TV, Firestick & Web.",
-  icons: {
-    icon: "/media/logo-onlight.png",
-  },
 };
 
 export default function RootLayout({ children }) {
