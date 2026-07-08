@@ -27,7 +27,7 @@ const COLS = [
       ["About Us", "/#story"],
       ["Become a Reseller", "#"],
       ["Privacy Policy", "/policy"],
-      ["Terms & Conditions", "#"],
+      ["Terms & Conditions", "/terms"],
     ],
   },
 ];
@@ -90,7 +90,7 @@ export default function Footer() {
             the Indian community.
           </p>
           <p className="foot-links">
-            <a href="/policy">Privacy Policy</a>
+            <a href="/policy">Privacy Policy</a> · <a href="/terms">Terms</a>
           </p>
         </div>
       </div>
