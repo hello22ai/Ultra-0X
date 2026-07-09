@@ -24,7 +24,7 @@ export default function Home() {
       <ScrollProgress />
       <PromoBanner />
       <Header />
-      <main>
+      <main id="main">
         <Hero />
         <QuickFeatures />
         <Marquee />

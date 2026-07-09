@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${heading.variable} ${inter.variable}`}>
       <body>
+        <a href="#main" className="skip-link">Skip to main content</a>
         <SmoothScroll />
         {children}
       </body>

@@ -9,6 +9,9 @@ const HEADER_OFFSET = -104; // keep in sync with scroll-padding-top in globals.c
 // of jumping; cross-page links fall through to normal navigation.
 export default function SmoothScroll() {
   useEffect(() => {
+    // Respect reduced-motion: native jumps + scroll-padding-top handle anchors.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     const lenis = new Lenis({ duration: 1.1 });
 
     const onClick = (e) => {

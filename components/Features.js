@@ -1,4 +1,4 @@
-import { Headset, Signal, Film, Bolt, Tv } from "@/components/icons";
+import { Headset, Signal, Film, Bolt, Tv, Home, Trophy, Sparkles, MusicNote } from "@/components/icons";
 
 export default function Features() {
   return (
@@ -30,26 +30,26 @@ export default function Features() {
             <div className="feature-big-art" aria-hidden="true">
               <div className="top10">
                 <div className="top10-h">
-                  <span className="t">🏠 Aaj Ghar Mein</span>
+                  <span className="t"><Home /> Aaj Ghar Mein</span>
                   <span className="b">Ek hi subscription</span>
                 </div>
                 <div className="t10-item">
-                  <span className="t10-emoji">🏏</span>
+                  <span className="t10-ico"><Trophy /></span>
                   <span className="t10-mid"><span className="t10-title">Papa — India vs Australia</span><span className="t10-bar"><i style={{ width: "94%" }} /></span></span>
                   <span className="t10-views">LIVE</span>
                 </div>
                 <div className="t10-item">
-                  <span className="t10-emoji">📺</span>
+                  <span className="t10-ico"><Tv /></span>
                   <span className="t10-mid"><span className="t10-title">Ma — shaam ke serials</span><span className="t10-bar"><i style={{ width: "72%" }} /></span></span>
                   <span className="t10-views">7:30 PM</span>
                 </div>
                 <div className="t10-item">
-                  <span className="t10-emoji">🧸</span>
+                  <span className="t10-ico"><Sparkles /></span>
                   <span className="t10-mid"><span className="t10-title">Bachhe — cartoons, homework ke baad</span><span className="t10-bar"><i style={{ width: "48%" }} /></span></span>
                   <span className="t10-views">5:00 PM</span>
                 </div>
                 <div className="t10-item">
-                  <span className="t10-emoji">🙏</span>
+                  <span className="t10-ico"><MusicNote /></span>
                   <span className="t10-mid"><span className="t10-title">Dadi — subah ke bhajan</span><span className="t10-bar"><i style={{ width: "62%" }} /></span></span>
                   <span className="t10-views">6:00 AM</span>
                 </div>

@@ -13,6 +13,9 @@ const base = {
 export const Headset = (p) => (
   <svg {...base} {...p}><path d="M3 14v-2a9 9 0 0 1 18 0v2" /><rect x="2" y="13" width="4" height="7" rx="1.5" /><rect x="18" y="13" width="4" height="7" rx="1.5" /><path d="M21 19a4 4 0 0 1-4 3h-3" /></svg>
 );
+export const Home = (p) => (
+  <svg {...base} {...p}><path d="m3 10.5 9-7.5 9 7.5" /><path d="M5 9v11h14V9" /><path d="M10 20v-6h4v6" /></svg>
+);
 export const Signal = (p) => (
   <svg {...base} {...p}><path d="M3 17v.01M7 14a5 5 0 0 1 5-5M3 10a11 11 0 0 1 11-1" /><path d="M7 20v-3M12 20v-6M17 20V8M21.5 4.5 16 10" /><circle cx="12" cy="17" r="1.4" /></svg>
 );

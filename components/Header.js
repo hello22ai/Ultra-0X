@@ -49,7 +49,8 @@ export default function Header() {
     const el = document.getElementById(hash);
     if (!el) return;
     e.preventDefault();
-    el.scrollIntoView({ behavior: "smooth" });
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    el.scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
     history.replaceState(null, "", `/#${hash}`);
   };
 
@@ -65,7 +66,7 @@ export default function Header() {
           onClick={goTo("/#home")}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/media/logo-clean.png" alt="Ultra X Player" className="brand-logo" />
+          <img src="/media/logo-clean.png" alt="Ultra X Player" className="brand-logo" width={934} height={649} />
         </Link>
 
         <nav className="nav">
