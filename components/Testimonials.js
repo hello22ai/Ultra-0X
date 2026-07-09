@@ -58,13 +58,10 @@ export default function Testimonials() {
     return () => clearInterval(timer.current);
   }, [paused, maxIndex]);
 
+  // Arrows clamp at the ends — no wrap-around, so "next" never jumps back
+  // to the first page. Only the autoplay timer loops.
   const go = (dir) =>
-    setIndex(() => {
-      const n = current + dir;
-      if (n < 0) return maxIndex;
-      if (n > maxIndex) return 0;
-      return n;
-    });
+    setIndex(() => Math.max(0, Math.min(maxIndex, current + dir)));
 
   return (
     <section className="section testimonials" id="reviews">
@@ -82,7 +79,12 @@ export default function Testimonials() {
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
-          <button className="rev-arrow prev" aria-label="Previous reviews" onClick={() => go(-1)}>
+          <button
+            className="rev-arrow prev"
+            aria-label="Previous reviews"
+            onClick={() => go(-1)}
+            disabled={current === 0}
+          >
             <ArrowRight style={{ transform: "rotate(180deg)" }} />
           </button>
 
@@ -121,7 +123,12 @@ export default function Testimonials() {
             </div>
           </div>
 
-          <button className="rev-arrow next" aria-label="Next reviews" onClick={() => go(1)}>
+          <button
+            className="rev-arrow next"
+            aria-label="Next reviews"
+            onClick={() => go(1)}
+            disabled={current === maxIndex}
+          >
             <ArrowRight />
           </button>
         </div>

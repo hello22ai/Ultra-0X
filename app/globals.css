@@ -394,7 +394,8 @@ h1,h2,h3,h4{font-family:var(--font-oswald),sans-serif;font-weight:600;line-heigh
 .rev-arrow{flex:0 0 auto;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;cursor:pointer;
   background:#ffffff;border:1px solid var(--border);color:var(--gold-4);transition:.25s;box-shadow:0 8px 20px rgba(60,48,10,.08)}
 .rev-arrow svg{width:20px;height:20px}
-.rev-arrow:hover{background:var(--gold-grad);color:#1a1407;transform:scale(1.06);box-shadow:var(--shadow-gold)}
+.rev-arrow:hover:not(:disabled){background:var(--gold-grad);color:#1a1407;transform:scale(1.06);box-shadow:var(--shadow-gold)}
+.rev-arrow:disabled{opacity:.35;cursor:default}
 .review{position:relative;border-radius:var(--radius);padding:32px 28px;background:linear-gradient(165deg,#ffffff,#f7f3e9);border:1px solid var(--border-soft);transition:.28s;box-shadow:0 8px 24px rgba(60,48,10,.05);overflow:hidden}
 .review:hover{border-color:var(--border);transform:translateY(-4px);box-shadow:var(--shadow-gold)}
 /* Big cinematic quote glyph in the corner */
