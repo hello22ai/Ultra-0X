@@ -62,9 +62,10 @@ export default function FAQ() {
           })}
         </div>
         <p className="faq-help">
-          <span className="online-dot" /> Jawab nahi mila? Real insaan se
-          poochhiye — <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>{" "}
-          pe likhiye, aam taur par 24 ghante ke andar jawab milta hai.
+          <span className="online-dot" /> Didn&apos;t find your answer? Ask a
+          real human — write to{" "}
+          <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> and
+          you&apos;ll usually hear back within 24 hours.
         </p>
       </div>
     </section>
