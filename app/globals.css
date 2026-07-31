@@ -144,7 +144,7 @@ button:disabled{cursor:default}
 .site-header.scrolled{background:rgba(7,7,10,.98);border-bottom-color:var(--border);box-shadow:0 10px 30px rgba(0,0,0,.4)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:96px}
 .brand{display:inline-flex;align-items:center}
-.brand-logo{height:72px;width:auto;transition:.3s}
+.brand-logo{height:72px;width:auto;transition:.3s;mix-blend-mode:screen}
 .brand:hover .brand-logo{transform:scale(1.04)}
 .nav{display:flex;gap:32px}
 .nav a{color:rgba(245,243,236,.74);font-weight:500;font-size:.95rem;position:relative;transition:.2s}
@@ -459,7 +459,7 @@ button:disabled{cursor:default}
 /* ===== Footer ===== */
 .site-footer{background:rgba(9,9,12,.97);border-top:1px solid rgba(212,175,55,.16);padding-top:66px;margin-top:20px}
 .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr 1.4fr;gap:36px;padding-bottom:48px}
-.foot-logo{height:98px;width:auto;margin-bottom:18px}
+.foot-logo{height:98px;width:auto;margin-bottom:18px;mix-blend-mode:screen}
 .foot-brand p{color:rgba(245,243,236,.6);font-size:.9rem;margin-bottom:20px;max-width:300px}
 .social{display:flex;gap:10px}
 .social a{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:var(--gold-3);transition:.28s}

@@ -66,7 +66,7 @@ export default function Header() {
           onClick={goTo("/#home")}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/media/logo-clean.png" alt="Ultra X Player" className="brand-logo" width={934} height={649} />
+          <img src="/media/logo-dark.png" alt="Ultra X Player" className="brand-logo" width={772} height={544} />
         </Link>
 
         <nav className="nav">

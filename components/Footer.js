@@ -45,7 +45,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="foot-brand">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/media/logo-clean.png" alt="Ultra X Player" className="foot-logo" width={934} height={649} loading="lazy" />
+          <img src="/media/logo-dark.png" alt="Ultra X Player" className="foot-logo" width={772} height={544} loading="lazy" />
           <p>
             Ghar jaisa entertainment, har screen par — ek chhoti si team, jo
             aapke ghar ke liye kaam karti hai. Ultra X Player provides
