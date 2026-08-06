@@ -17,15 +17,7 @@ const LINKS = [
   { label: "Devices", href: "/#devices" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Reviews", href: "/#reviews" },
-  {
-    label: "Support",
-    href: "/#faq",
-    children: [
-      ["FAQs", "/#faq"],
-      ["Our Story", "/#story"],
-      ["Contact Us", "/#download"],
-    ],
-  },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export default function Header() {

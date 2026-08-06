@@ -452,7 +452,7 @@ button:disabled{cursor:default}
 .store-btn:hover{border-color:var(--gold-3);background:rgba(212,175,55,.12);transform:translateY(-3px);box-shadow:0 16px 38px rgba(0,0,0,.4)}
 .store-btn small{display:block;color:rgba(245,243,236,.55);font-size:.7rem}
 .store-btn strong{font-family:var(--font-oswald),sans-serif;font-size:1.1rem;color:#fff}
-.cta-box .human-help{color:rgba(245,243,236,.62);margin:34px auto 0;max-width:640px}
+.cta-box .human-help{color:rgba(245,243,236,.62);margin:34px auto 0;max-width:none}
 .cta-box .human-help a{color:#f5d061;border-bottom-color:rgba(212,175,55,.5)}
 .cta-box .human-help a:hover{color:#fde9a6}
 

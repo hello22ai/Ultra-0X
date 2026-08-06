@@ -1,10 +1,14 @@
-import { GooglePlay, Apple, Amazon } from "@/components/icons";
+import { GooglePlay, Apple } from "@/components/icons";
 import { SUPPORT_EMAIL } from "@/components/site-config";
 
 const STORES = [
-  { Icon: GooglePlay, small: "GET IT ON", strong: "Google Play" },
-  { Icon: Apple, small: "Download on the", strong: "App Store" },
-  { Icon: Amazon, small: "Available on", strong: "Fire TV" },
+  {
+    Icon: GooglePlay,
+    small: "GET IT ON",
+    strong: "Google Play",
+    href: "https://play.google.com/store/apps/details?id=com.ultrax",
+  },
+  { Icon: Apple, small: "Download on the", strong: "App Store", href: "#" },
 ];
 
 export default function DownloadCTA() {
@@ -19,8 +23,13 @@ export default function DownloadCTA() {
             team haazir hai.
           </p>
           <div className="store-buttons">
-            {STORES.map(({ Icon, small, strong }) => (
-              <a href="#" className="store-btn" key={strong}>
+            {STORES.map(({ Icon, small, strong, href }) => (
+              <a
+                href={href}
+                className="store-btn"
+                key={strong}
+                {...(href !== "#" && { target: "_blank", rel: "noopener noreferrer" })}
+              >
                 <Icon />
                 <div>
                   <small>{small}</small>
